@@ -135,7 +135,7 @@
 
   Widget.prototype.render = function(state) {
     var res = '';
-    res += '<i class="' + getIconClass(state.conditionCode) + '" />';
+    res += '<i class="' + getIconClass(state.conditionCode) + '"</i>';
     res += '<span class="micro-weather-temp">' + state.temp + '</span>';
     res += '<span class="micro-weather-degree">°</span>'
     res += '<span class="micro-weather-temp-unit">' + state.tempUnit + '</span>';
