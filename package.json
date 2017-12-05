@@ -1,0 +1,16 @@
+{
+  "name": "micro-weather-widget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist.js",
+  "scripts": {
+    "build": "uglifyjs ./lib.js -o dist.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "uglify-js": "^3.2.1"
+  }
+}

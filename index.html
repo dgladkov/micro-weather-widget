@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div id="container"></div>
+    <button id="addBtn">Add widget</button>
+    <button id="removeBtn">Remove widget</button>
+    <script src="./lib.js"></script>
+    <script>
+      var widget;
+      addBtn.onclick = function() {
+        widget = MicroWeatherWidget.create('#container', 'Seattle, WA');
+      }
+      removeBtn.onclick = function () {
+        if (widget !== null) {
+          widget.remove();
+        }
+      }
+    </script>
+  </body>
+</html>
