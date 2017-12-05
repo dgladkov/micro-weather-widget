@@ -120,7 +120,7 @@
     var self = this;
     queryYQL('SELECT units.temperature, item.condition.temp, item.condition.code, ttl FROM weather.forecast WHERE woeid IN (SELECT woeid FROM geo.places(1) WHERE text="' + this.location + '")', function(response) {
       var channel = response.query.results.channel;
-      var nextUpdate = parseInt(channel.ttl, 10) * 1000;
+      var nextUpdate = parseInt(channel.ttl, 10) * 60 * 1000;
       var temp = channel.item.condition.temp;
       var conditionCode = channel.item.condition.code;
       var tempUnit = channel.units.temperature;
