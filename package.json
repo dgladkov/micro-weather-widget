@@ -8,9 +8,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "uglify-js": "^3.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgladkov/micro-weather-widget.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dgladkov/micro-weather-widget/issues"
+  },
+  "homepage": "https://github.com/dgladkov/micro-weather-widget#readme"
 }
